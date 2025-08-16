@@ -21,7 +21,6 @@ const buttonVariants = cva(
         luxury: "btn-luxury",
         gold: "btn-gold",
         crystal: "btn-crystal",
-        romantic: "btn-romantic",
       },
       size: {
         default: "h-10 px-4 py-2",

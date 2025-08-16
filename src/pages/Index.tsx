@@ -5,6 +5,7 @@ import FeaturedProducts from "@/components/FeaturedProducts";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingContacts from "@/components/FloatingContacts";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <About />
       <Contact />
       <Footer />
+      <FloatingContacts />
     </div>
   );
 };

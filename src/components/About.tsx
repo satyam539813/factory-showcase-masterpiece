@@ -4,12 +4,12 @@ import factoryShowroom from "@/assets/factory-showroom.jpg";
 
 const About = () => {
   const features = [
-    "Premium quality materials and craftsmanship",
-    "25+ years of manufacturing excellence",
-    "Custom design and personalization services",
-    "International shipping and installation",
-    "Lifetime warranty on premium products",
-    "Eco-friendly production processes"
+    "All India home delivery with reliable courier services",
+    "Wholesale prices for bulk orders and events",
+    "Full stock ready - immediate availability",
+    "Specialized in wedding and mandap decorations",
+    "Premium jhummar lights and crystal chandeliers",
+    "Complete event management and setup services"
   ];
 
   const stats = [
@@ -47,21 +47,20 @@ const About = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-gradient-luxury">
-                Crafting Luxury Since 1998
+                Wedding Décor Specialists
               </h2>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                For over two decades, we have been at the forefront of luxury decorative 
-                manufacturing, creating exquisite pieces that transform spaces into 
-                works of art. Our commitment to excellence and attention to detail 
-                has made us the preferred choice for discerning customers worldwide.
+                We specialize in wedding decorations, mandap setups, and event management 
+                services across India. Our extensive collection includes crystal chandeliers, 
+                jhummar lights, and premium décor items perfect for weddings, birthday 
+                celebrations, and corporate events.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                From our state-of-the-art factory, we combine traditional craftsmanship 
-                with modern technology to produce chandeliers, planters, and decorative 
-                items that exceed expectations. Every piece is meticulously inspected 
-                and finished to perfection.
+                With full stock ready and wholesale pricing, we ensure your events are 
+                decorated to perfection. Our reliable delivery network covers all of India 
+                through DTDC Courier, GATI Transport, and VRL Transport services.
               </p>
             </div>
 

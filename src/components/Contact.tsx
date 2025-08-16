@@ -8,26 +8,26 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Factory Address",
-      details: ["123 Luxury Manufacturing District", "Premium Industrial Zone", "City, State 12345"],
+      title: "Service Areas",
+      details: ["All India Home Delivery", "DTDC Courier Service", "GATI & VRL Transport"],
       gradient: "from-primary to-primary-light"
     },
     {
       icon: Phone,
-      title: "Phone Numbers",
-      details: ["+1 (555) 123-4567", "+1 (555) 765-4321", "WhatsApp: +1 (555) 999-8888"],
+      title: "Contact Numbers",
+      details: ["Main: 7078136499", "Sameer: 9758504359", "WhatsApp: 7078136499"],
       gradient: "from-gold to-gold-dark"
     },
     {
       icon: Mail,
-      title: "Email Addresses",
-      details: ["sales@luxedecor.com", "support@luxedecor.com", "custom@luxedecor.com"],
+      title: "Quick Contact",
+      details: ["WhatsApp: wa.me/+917078136499", "Call for instant quotes", "Wholesale pricing available"],
       gradient: "from-accent to-accent-dark"
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 8:00 AM - 6:00 PM", "Saturday: 9:00 AM - 4:00 PM", "Sunday: Closed"],
+      details: ["Monday - Sunday: 9:00 AM - 9:00 PM", "Festival Season: Extended Hours", "Emergency: Call anytime"],
       gradient: "from-crystal to-crystal-dark"
     }
   ];
@@ -45,12 +45,12 @@ const Contact = () => {
           </div>
           
           <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-gradient-luxury mb-6">
-            Contact Our Experts
+            Contact Our Wedding Experts
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your space with luxury décor? Our team is here to help 
-            you find the perfect pieces for your home or project.
+            Ready for your dream wedding or event? Contact us for wholesale prices, 
+            All India delivery, and expert decoration services.
           </p>
         </div>
 
@@ -169,13 +169,17 @@ const Contact = () => {
             {/* Quick Quote */}
             <div className="card-glass p-6 bg-gold-gradient">
               <h3 className="font-playfair text-lg font-bold text-primary-dark mb-3">
-                Need a Quick Quote?
+                WhatsApp for Quick Response
               </h3>
               <p className="text-primary-dark/80 text-sm mb-4">
-                Get an instant estimate for your project by calling our experts directly.
+                Get instant quotes and see our latest wedding collection on WhatsApp.
               </p>
-              <Button variant="crystal" className="w-full">
-                Call Now: (555) 123-4567
+              <Button 
+                variant="crystal" 
+                className="w-full"
+                onClick={() => window.open('https://wa.me/+917078136499', '_blank')}
+              >
+                WhatsApp: 7078136499
               </Button>
             </div>
           </div>

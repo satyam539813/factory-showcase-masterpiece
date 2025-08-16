@@ -34,32 +34,32 @@ const Hero = () => {
               <div className="inline-flex items-center bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-6 py-2">
                 <Sparkles className="w-4 h-4 text-gold mr-2" />
                 <span className="text-sm font-medium text-gradient-gold">
-                  Premium Handcrafted Products
+                  🚚 All India Delivery • Wholesale Prices • Full Stock Ready
                 </span>
               </div>
 
               <h1 className="font-playfair text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="text-primary-foreground">Exquisite</span>
+                <span className="text-primary-foreground">Wedding &</span>
                 <br />
-                <span className="text-gradient-gold">Luxury Décor</span>
+                <span className="text-gradient-gold">Event Décor</span>
                 <br />
-                <span className="text-primary-foreground">Collection</span>
+                <span className="text-primary-foreground">Specialists</span>
               </h1>
 
               <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-2xl">
-                Discover our magnificent range of crystal chandeliers, ornate planters, and 
-                elegant decorative pieces. Each item is meticulously crafted to transform 
-                your space into a palace of sophistication.
+                Crystal chandeliers, mandap decorations, jhummar lights, and premium event décor. 
+                Wholesale prices with All India home delivery. Full stock ready for weddings, 
+                events, and celebrations.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="gold" size="xl" className="group">
-                Explore Collection
+                WhatsApp: 7078136499
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="crystal" size="xl">
-                View Catalog
+                Call: 7078136499
               </Button>
             </div>
 
@@ -67,15 +67,15 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-gradient-gold font-playfair">500+</div>
-                <div className="text-sm text-primary-foreground/80">Premium Products</div>
+                <div className="text-sm text-primary-foreground/80">Wedding Products</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-gold font-playfair">25+</div>
-                <div className="text-sm text-primary-foreground/80">Years Experience</div>
+                <div className="text-3xl font-bold text-gradient-gold font-playfair">🚚</div>
+                <div className="text-sm text-primary-foreground/80">All India Delivery</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-gradient-gold font-playfair">1000+</div>
-                <div className="text-sm text-primary-foreground/80">Happy Customers</div>
+                <div className="text-3xl font-bold text-gradient-gold font-playfair">💰</div>
+                <div className="text-sm text-primary-foreground/80">Wholesale Prices</div>
               </div>
             </div>
           </div>

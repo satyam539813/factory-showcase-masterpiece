@@ -10,12 +10,12 @@ const Footer = () => {
   ];
 
   const categories = [
-    "Crystal Chandeliers",
-    "Garden Ornaments", 
-    "Decorative Planters",
-    "Premium Accessories",
-    "Water Features",
-    "Custom Designs"
+    "Mandap Decorations",
+    "Wedding Stage Setup", 
+    "Jhummar & Crystal Lights",
+    "Birthday Decorations",
+    "Event Management",
+    "Wholesale Products"
   ];
 
   const socialLinks = [
@@ -45,9 +45,9 @@ const Footer = () => {
             </div>
             
             <p className="text-primary-foreground/90 leading-relaxed">
-              Creating exquisite luxury decorative products for over 25 years. 
-              Transform your space with our handcrafted chandeliers, planters, 
-              and premium décor pieces.
+              Specializing in wedding decorations, mandap setups, and event management 
+              across India. Wholesale prices, full stock ready, and reliable All India 
+              delivery through DTDC, GATI, and VRL Transport.
             </p>
 
             {/* Social Links */}
@@ -115,25 +115,25 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                 <div className="text-primary-foreground/80 text-sm">
-                  <p>123 Luxury Manufacturing District</p>
-                  <p>Premium Industrial Zone</p>
-                  <p>City, State 12345</p>
+                  <p>All India Home Delivery</p>
+                  <p>DTDC • GATI • VRL Transport</p>
+                  <p>Wedding & Event Specialists</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0" />
                 <div className="text-primary-foreground/80 text-sm">
-                  <p>+1 (555) 123-4567</p>
-                  <p>+1 (555) 765-4321</p>
+                  <p>7078136499 (Main)</p>
+                  <p>9758504359 (Sameer)</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
                 <div className="text-primary-foreground/80 text-sm">
-                  <p>sales@luxedecor.com</p>
-                  <p>support@luxedecor.com</p>
+                  <p>WhatsApp: 7078136499</p>
+                  <p>wa.me/+917078136499</p>
                 </div>
               </div>
             </div>

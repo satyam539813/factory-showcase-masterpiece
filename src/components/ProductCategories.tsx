@@ -5,33 +5,33 @@ const ProductCategories = () => {
   const categories = [
     {
       icon: Crown,
-      title: "Crystal Chandeliers",
-      description: "Magnificent crystal chandeliers with gold accents and premium finishes",
+      title: "Mandap Decorations",
+      description: "Beautiful mandap setups with crystal chandeliers and traditional designs",
       products: "120+ Products",
       gradient: "from-gold-light to-gold-dark",
       iconColor: "text-gold-dark"
     },
     {
       icon: TreePine,
-      title: "Garden Ornaments",
-      description: "Elegant animal statues and decorative pieces for outdoor spaces",
-      products: "85+ Products",
+      title: "Wedding Decorations",
+      description: "Complete wedding décor including stage setups and floral arrangements",
+      products: "200+ Products",
       gradient: "from-primary-light to-primary",
       iconColor: "text-primary-foreground"
     },
     {
       icon: Lamp,
-      title: "Decorative Planters",
-      description: "Ornate planters and urns with intricate designs and gold details",
+      title: "Jhummar & Crystal Lights",
+      description: "Premium jhummar lights and crystal chandeliers for grand celebrations",
       products: "150+ Products",
       gradient: "from-crystal to-crystal-dark",
       iconColor: "text-primary"
     },
     {
       icon: Sparkles,
-      title: "Premium Accessories",
-      description: "Luxury home accessories and decorative items for discerning taste",
-      products: "200+ Products",
+      title: "Event Management",
+      description: "Birthday parties, corporate events, and special celebration décor",
+      products: "100+ Services",
       gradient: "from-accent-light to-accent",
       iconColor: "text-primary-dark"
     }
@@ -50,12 +50,12 @@ const ProductCategories = () => {
           </div>
           
           <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-gradient-luxury mb-6">
-            Discover Our Premium Collections
+            Wedding & Event Décor Collections
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Each category represents years of craftsmanship and attention to detail, 
-            bringing you the finest decorative products for luxury living.
+            Specialized in wedding decorations, mandap setups, and event management. 
+            Wholesale prices with All India delivery through DTDC, GATI, and VRL Transport.
           </p>
         </div>
 

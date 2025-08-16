@@ -71,6 +71,14 @@ export default {
 					light: 'hsl(var(--crystal-light))',
 					dark: 'hsl(var(--crystal-dark))'
 				},
+				burgundy: {
+					DEFAULT: 'hsl(var(--burgundy))',
+					light: 'hsl(var(--burgundy-light))'
+				},
+				blush: {
+					DEFAULT: 'hsl(var(--blush))',
+					dark: 'hsl(var(--blush-dark))'
+				},
 				'glass-bg': 'hsl(var(--glass-bg))',
 				'glass-border': 'hsl(var(--glass-border))',
 				sidebar: {
@@ -88,7 +96,8 @@ export default {
 				'luxury': 'var(--shadow-luxury)',
 				'gold': 'var(--shadow-gold)',
 				'crystal': 'var(--shadow-crystal)',
-				'hover': 'var(--shadow-hover)'
+				'hover': 'var(--shadow-hover)',
+				'romantic': 'var(--shadow-romantic)'
 			},
 			backdropBlur: {
 				'glass': 'var(--glass-backdrop)'

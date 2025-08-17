@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Award, Star } from "lucide-react";
-import heroChandelier from "@/assets/hero-chandelier.jpg";
+import heroMandap from "@/assets/luxury-mandap-wings.jpg";
 
 const Hero = () => {
   return (
@@ -8,8 +8,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroChandelier}
-          alt="Luxury crystal chandelier"
+          src={heroMandap}
+          alt="Luxury wedding mandap with golden wings decoration"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-hero-gradient opacity-80"></div>
@@ -85,17 +85,17 @@ const Hero = () => {
             <div className="card-glass p-8 hover-lift">
               <div className="aspect-square rounded-xl overflow-hidden bg-crystal-gradient">
                 <img
-                  src={heroChandelier}
-                  alt="Featured luxury chandelier"
+                  src={heroMandap}
+                  alt="Royal Wedding Mandap with Golden Wings"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="mt-6 text-center">
                 <h3 className="font-playfair text-2xl font-bold text-gradient-luxury mb-2">
-                  Royal Crystal Chandelier
+                  Royal Wedding Mandap
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Hand-cut crystals with 24k gold accents
+                  Luxury golden wings design with LED lighting
                 </p>
                 <div className="flex items-center justify-center space-x-1 mb-4">
                   {[...Array(5)].map((_, i) => (

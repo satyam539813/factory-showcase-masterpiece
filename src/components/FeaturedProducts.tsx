@@ -2,28 +2,32 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, Heart, Eye, ShoppingCart } from "lucide-react";
 import decorativePlanters from "@/assets/decorative-planters.jpg";
-import heroChandelier from "@/assets/hero-chandelier.jpg";
+import luxuryMandap from "@/assets/luxury-mandap-wings.jpg";
+import crystalHorse from "@/assets/crystal-winged-horse.jpg";
+import floralMandap from "@/assets/floral-mandap-arch.jpg";
+import ledDeer from "@/assets/led-deer-decoration.jpg";
+import goldenLotus from "@/assets/golden-lotus-lights.jpg";
 
 const FeaturedProducts = () => {
   const products = [
     {
       id: 1,
-      name: "Royal Crystal Chandelier",
-      category: "Chandeliers",
-      price: "$2,850",
-      originalPrice: "$3,200",
+      name: "Royal Wedding Mandap",
+      category: "Mandap Decorations",
+      price: "₹2,85,000",
+      originalPrice: "₹3,20,000",
       rating: 4.9,
       reviews: 127,
-      image: heroChandelier,
+      image: luxuryMandap,
       badge: "Bestseller",
       badgeColor: "bg-gold text-primary-dark"
     },
     {
       id: 2,
-      name: "Ornate Garden Planters Set",
+      name: "Decorative Planters Set",
       category: "Garden Décor",
-      price: "$1,250",
-      originalPrice: "$1,450",
+      price: "₹45,000",
+      originalPrice: "₹55,000",
       rating: 4.8,
       reviews: 89,
       image: decorativePlanters,
@@ -32,49 +36,49 @@ const FeaturedProducts = () => {
     },
     {
       id: 3,
-      name: "Crystal Deer Sculpture",
-      category: "Decorative Art",
-      price: "$890",
-      originalPrice: "$1,100",
+      name: "Crystal Winged Horse",
+      category: "Wedding Props",
+      price: "₹1,25,000",
+      originalPrice: "₹1,50,000",
       rating: 4.9,
       reviews: 156,
-      image: heroChandelier,
+      image: crystalHorse,
       badge: "Limited",
       badgeColor: "bg-accent text-accent-foreground"
     },
     {
       id: 4,
-      name: "Golden Elephant Set",
-      category: "Garden Ornaments",
-      price: "$1,650",
-      originalPrice: "$1,900",
+      name: "LED Deer Decoration",
+      category: "LED Decorations",
+      price: "₹35,000",
+      originalPrice: "₹42,000",
       rating: 4.7,
       reviews: 92,
-      image: decorativePlanters,
+      image: ledDeer,
       badge: "Premium",
       badgeColor: "bg-crystal-dark text-foreground"
     },
     {
       id: 5,
-      name: "Flamingo Water Feature",
-      category: "Water Features",
-      price: "$2,200",
-      originalPrice: "$2,500",
+      name: "Floral Mandap Arch",
+      category: "Wedding Backdrops",
+      price: "₹2,50,000",
+      originalPrice: "₹2,85,000",
       rating: 4.8,
       reviews: 73,
-      image: heroChandelier,
+      image: floralMandap,
       badge: "Trending",
       badgeColor: "bg-gold-light text-primary-dark"
     },
     {
       id: 6,
-      name: "Luxury Vase Collection",
-      category: "Home Décor",
-      price: "$750",
-      originalPrice: "$950",
+      name: "Golden Lotus Lights",
+      category: "Decorative Lighting",
+      price: "₹85,000",
+      originalPrice: "₹95,000",
       rating: 4.6,
       reviews: 148,
-      image: decorativePlanters,
+      image: goldenLotus,
       badge: "Sale",
       badgeColor: "bg-destructive text-destructive-foreground"
     }

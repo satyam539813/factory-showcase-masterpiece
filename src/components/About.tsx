@@ -46,7 +46,7 @@ const About = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-gradient-luxury">
+              <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-primary">
                 Wedding Décor Specialists
               </h2>
               
@@ -98,7 +98,7 @@ const About = () => {
                 alt="Luxe Décor Factory Showroom"
                 className="w-full h-96 object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+              <div className="absolute inset-0 bg-primary/60"></div>
               <div className="absolute bottom-6 left-6">
                 <h3 className="font-playfair text-2xl font-bold text-primary-foreground mb-2">
                   Our Premium Showroom
@@ -119,10 +119,10 @@ const About = () => {
                     className="card-glass p-6 text-center hover-lift"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    <div className="w-12 h-12 bg-gold-gradient rounded-xl flex items-center justify-center mx-auto mb-4 shadow-gold">
+                    <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       <Icon className="w-6 h-6 text-primary-dark" />
                     </div>
-                    <div className="font-playfair text-2xl font-bold text-gradient-gold">
+                    <div className="font-playfair text-2xl font-bold text-gold">
                       {stat.value}{stat.suffix}
                     </div>
                     <div className="text-sm text-muted-foreground mt-1">

@@ -89,7 +89,7 @@ const FeaturedProducts = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-gradient-luxury mb-6">
+          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-primary mb-6">
             Featured Premium Products
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -147,7 +147,7 @@ const FeaturedProducts = () => {
               <div className="p-6 space-y-4">
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">{product.category}</p>
-                  <h3 className="font-playfair text-lg font-bold text-foreground group-hover:text-gradient-luxury transition-colors duration-300">
+                  <h3 className="font-playfair text-lg font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                     {product.name}
                   </h3>
                 </div>
@@ -173,7 +173,7 @@ const FeaturedProducts = () => {
 
                 {/* Price */}
                 <div className="flex items-center space-x-3">
-                  <span className="font-bold text-xl text-gradient-gold font-playfair">
+                  <span className="font-bold text-xl text-gold font-playfair">
                     {product.price}
                   </span>
                   <span className="text-muted-foreground line-through">

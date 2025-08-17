@@ -30,7 +30,7 @@ const FloatingContacts = () => {
       <div className="card-glass p-3 max-w-xs">
         <div className="flex items-center space-x-2 mb-2">
           <Truck className="w-4 h-4 text-gold" />
-          <span className="text-sm font-medium text-gradient-gold">
+          <span className="text-sm font-medium text-gold">
             All India Delivery
           </span>
         </div>

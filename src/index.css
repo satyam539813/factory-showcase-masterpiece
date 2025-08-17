@@ -57,23 +57,6 @@
 
     --radius: 0.75rem;
 
-    /* Premium Gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--accent)) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-light)) 0%, hsl(var(--gold)) 50%, hsl(var(--gold-dark)) 100%);
-    --gradient-crystal: linear-gradient(145deg, hsl(var(--crystal-light)) 0%, hsl(var(--crystal)) 50%, hsl(var(--crystal-dark)) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary-dark)) 0%, hsl(var(--primary)) 40%, hsl(var(--primary-light)) 70%, hsl(var(--accent) / 0.1) 100%);
-
-    /* Elegant Shadows */
-    --shadow-luxury: 0 20px 60px hsl(var(--primary) / 0.15);
-    --shadow-gold: 0 10px 40px hsl(var(--gold) / 0.3);
-    --shadow-crystal: 0 15px 50px hsl(var(--crystal-dark) / 0.2);
-    --shadow-hover: 0 25px 80px hsl(var(--primary) / 0.25);
-
-    /* Glass Morphism */
-    --glass-bg: hsl(var(--background) / 0.8);
-    --glass-border: hsl(var(--border) / 0.3);
-    --glass-backdrop: blur(12px);
-
     /* Premium Animations */
     --transition-luxury: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -152,46 +135,37 @@
 @layer components {
   /* Luxury Button Variants */
   .btn-luxury {
-    @apply bg-gradient-to-r from-primary via-primary-light to-accent text-primary-foreground font-medium px-8 py-4 rounded-lg shadow-luxury hover:shadow-hover transition-all duration-300 hover:scale-105;
+    @apply bg-primary text-primary-foreground font-medium px-8 py-4 rounded-lg shadow-lg hover:bg-primary-light transition-all duration-300 hover:scale-105;
   }
 
   .btn-gold {
-    @apply bg-gradient-to-r from-gold-light via-gold to-gold-dark text-accent-foreground font-medium px-6 py-3 rounded-lg shadow-gold hover:shadow-hover transition-all duration-300 hover:scale-105;
+    @apply bg-gold text-primary-dark font-medium px-6 py-3 rounded-lg shadow-lg hover:bg-gold-light transition-all duration-300 hover:scale-105;
   }
 
   .btn-crystal {
-    @apply bg-gradient-to-r from-crystal-light to-crystal backdrop-blur-md border border-glass-border text-card-foreground font-medium px-6 py-3 rounded-lg shadow-crystal hover:shadow-hover transition-all duration-300 hover:scale-105;
+    @apply bg-crystal backdrop-blur-md border border-border text-card-foreground font-medium px-6 py-3 rounded-lg shadow-lg hover:bg-crystal-light transition-all duration-300 hover:scale-105;
   }
 
   /* Glass Morphism Cards */
   .card-glass {
-    @apply bg-glass-bg backdrop-blur-md border border-glass-border rounded-xl shadow-crystal transition-all duration-300 hover:shadow-hover;
+    @apply bg-card backdrop-blur-md border border-border rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl;
   }
 
-  /* Luxury Gradient Backgrounds */
-  .bg-luxury-gradient {
-    background: var(--gradient-luxury);
+  /* Solid Backgrounds */
+  .bg-luxury-solid {
+    @apply bg-primary;
   }
 
-  .bg-gold-gradient {
-    background: var(--gradient-gold);
+  .bg-gold-solid {
+    @apply bg-gold;
   }
 
-  .bg-crystal-gradient {
-    background: var(--gradient-crystal);
+  .bg-crystal-solid {
+    @apply bg-crystal;
   }
 
-  .bg-hero-gradient {
-    background: var(--gradient-hero);
-  }
-
-  /* Premium Text Effects */
-  .text-gradient-gold {
-    @apply bg-gradient-to-r from-gold-light via-gold to-gold-dark bg-clip-text text-transparent;
-  }
-
-  .text-gradient-luxury {
-    @apply bg-gradient-to-r from-primary via-primary-light to-accent bg-clip-text text-transparent;
+  .bg-hero-solid {
+    @apply bg-primary-dark;
   }
 
   /* Hover Effects */
@@ -200,7 +174,7 @@
   }
 
   .hover-glow {
-    @apply transition-all duration-300 hover:shadow-gold hover:border-accent;
+    @apply transition-all duration-300 hover:shadow-lg hover:border-accent;
   }
 
   /* Animation Classes */
@@ -232,10 +206,10 @@
   }
 
   .scrollbar-luxury::-webkit-scrollbar-thumb {
-    @apply bg-gradient-to-b from-gold-light to-gold-dark rounded-full;
+    @apply bg-gold rounded-full;
   }
 
   .scrollbar-luxury::-webkit-scrollbar-thumb:hover {
-    @apply from-gold to-gold-dark;
+    @apply bg-gold-dark;
   }
 }

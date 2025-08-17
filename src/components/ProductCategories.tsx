@@ -8,7 +8,7 @@ const ProductCategories = () => {
       title: "Mandap Decorations",
       description: "Beautiful mandap setups with crystal chandeliers and traditional designs",
       products: "120+ Products",
-      gradient: "from-gold-light to-gold-dark",
+      bgColor: "bg-gold-light",
       iconColor: "text-gold-dark"
     },
     {
@@ -16,7 +16,7 @@ const ProductCategories = () => {
       title: "Wedding Decorations",
       description: "Complete wedding décor including stage setups and floral arrangements",
       products: "200+ Products",
-      gradient: "from-primary-light to-primary",
+      bgColor: "bg-primary-light",
       iconColor: "text-primary-foreground"
     },
     {
@@ -24,7 +24,7 @@ const ProductCategories = () => {
       title: "Jhummar & Crystal Lights",
       description: "Premium jhummar lights and crystal chandeliers for grand celebrations",
       products: "150+ Products",
-      gradient: "from-crystal to-crystal-dark",
+      bgColor: "bg-crystal",
       iconColor: "text-primary"
     },
     {
@@ -32,7 +32,7 @@ const ProductCategories = () => {
       title: "Event Management",
       description: "Birthday parties, corporate events, and special celebration décor",
       products: "100+ Services",
-      gradient: "from-accent-light to-accent",
+      bgColor: "bg-accent-light",
       iconColor: "text-primary-dark"
     }
   ];
@@ -42,14 +42,14 @@ const ProductCategories = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-6 py-2 mb-6">
+          <div className="inline-flex items-center bg-card backdrop-blur-md border border-border rounded-full px-6 py-2 mb-6">
             <Sparkles className="w-4 h-4 text-gold mr-2" />
-            <span className="text-sm font-medium text-gradient-gold">
+            <span className="text-sm font-medium text-gold">
               Product Categories
             </span>
           </div>
           
-          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-gradient-luxury mb-6">
+          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-primary mb-6">
             Wedding & Event Décor Collections
           </h2>
           
@@ -70,13 +70,13 @@ const ProductCategories = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Icon */}
-                <div className={`w-16 h-16 bg-gradient-to-br ${category.gradient} rounded-xl flex items-center justify-center mb-6 shadow-gold group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 ${category.bgColor} rounded-xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className={`w-8 h-8 ${category.iconColor}`} />
                 </div>
 
                 {/* Content */}
                 <div className="space-y-4">
-                  <h3 className="font-playfair text-xl font-bold text-foreground group-hover:text-gradient-luxury transition-colors duration-300">
+                  <h3 className="font-playfair text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                     {category.title}
                   </h3>
                   
@@ -85,7 +85,7 @@ const ProductCategories = () => {
                   </p>
                   
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium text-gradient-gold">
+                    <span className="text-sm font-medium text-gold">
                       {category.products}
                     </span>
                     <ArrowRight className="w-4 h-4 text-gold group-hover:translate-x-1 transition-transform duration-300" />
@@ -93,7 +93,7 @@ const ProductCategories = () => {
                 </div>
 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
               </div>
             );
           })}

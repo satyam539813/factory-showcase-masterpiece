@@ -33,11 +33,11 @@ const Footer = () => {
           {/* Brand & Description */}
           <div className="lg:col-span-1 space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gold-gradient rounded-lg flex items-center justify-center shadow-gold">
+              <div className="w-10 h-10 bg-gold rounded-lg flex items-center justify-center shadow-lg">
                 <Crown className="w-6 h-6 text-primary-dark" />
               </div>
               <div>
-                <h1 className="font-playfair text-xl font-bold text-gradient-gold">
+                <h1 className="font-playfair text-xl font-bold text-gold">
                   Luxe Décor
                 </h1>
                 <p className="text-xs text-primary-foreground/80 -mt-1">Premium Factory</p>
@@ -58,7 +58,7 @@ const Footer = () => {
                   <a
                     key={social.name}
                     href={social.href}
-                    className="w-10 h-10 bg-primary-light/20 hover:bg-gold-gradient rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                    className="w-10 h-10 bg-primary-light/20 hover:bg-gold rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                     aria-label={social.name}
                   >
                     <Icon className="w-5 h-5 text-primary-foreground group-hover:text-primary-dark transition-colors" />
@@ -70,7 +70,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-6">
-            <h3 className="font-playfair text-lg font-bold text-gradient-gold">
+            <h3 className="font-playfair text-lg font-bold text-gold">
               Quick Links
             </h3>
             <ul className="space-y-3">
@@ -89,7 +89,7 @@ const Footer = () => {
 
           {/* Product Categories */}
           <div className="space-y-6">
-            <h3 className="font-playfair text-lg font-bold text-gradient-gold">
+            <h3 className="font-playfair text-lg font-bold text-gold">
               Product Categories
             </h3>
             <ul className="space-y-3">
@@ -108,7 +108,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <h3 className="font-playfair text-lg font-bold text-gradient-gold">
+            <h3 className="font-playfair text-lg font-bold text-gold">
               Contact Information
             </h3>
             <div className="space-y-4">

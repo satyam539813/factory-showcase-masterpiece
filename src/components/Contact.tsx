@@ -39,12 +39,12 @@ const Contact = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center bg-glass-bg backdrop-blur-md border border-glass-border rounded-full px-6 py-2 mb-6">
             <Sparkles className="w-4 h-4 text-gold mr-2" />
-            <span className="text-sm font-medium text-gradient-gold">
+            <span className="text-sm font-medium text-gold">
               Get In Touch
             </span>
           </div>
           
-          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-gradient-luxury mb-6">
+          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-primary mb-6">
             Contact Our Wedding Experts
           </h2>
           
@@ -59,7 +59,7 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card className="card-glass border-0 shadow-luxury">
               <CardContent className="p-8">
-                <h3 className="font-playfair text-2xl font-bold text-gradient-luxury mb-6">
+                <h3 className="font-playfair text-2xl font-bold text-primary mb-6">
                   Send us a Message
                 </h3>
                 
@@ -147,7 +147,7 @@ const Contact = () => {
                   className="card-glass p-6 hover-lift"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className={`w-12 h-12 bg-gradient-to-br ${info.gradient} rounded-xl flex items-center justify-center mb-4 shadow-gold`}>
+                  <div className={`w-12 h-12 bg-${info.gradient.split('-')[1]} rounded-xl flex items-center justify-center mb-4 shadow-lg`}>
                     <Icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   
@@ -167,7 +167,7 @@ const Contact = () => {
             })}
 
             {/* Quick Quote */}
-            <div className="card-glass p-6 bg-gold-gradient">
+            <div className="card-glass p-6 bg-gold">
               <h3 className="font-playfair text-lg font-bold text-primary-dark mb-3">
                 WhatsApp for Quick Response
               </h3>

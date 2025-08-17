@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Award, Star } from "lucide-react";
+import { ArrowRight, Sparkles, Award, Star, Heart } from "lucide-react";
 import heroMandap from "@/assets/luxury-mandap-wings.jpg";
 
 const Hero = () => {
@@ -82,31 +82,59 @@ const Hero = () => {
 
           {/* Featured Product Preview */}
           <div className="relative">
-            <div className="card-glass p-8 hover-lift">
-              <div className="aspect-square rounded-xl overflow-hidden bg-crystal-gradient">
+            {/* Floating decorative elements */}
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-gold/20 to-transparent rounded-full blur-xl"></div>
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-tr from-crystal/20 to-transparent rounded-full blur-xl"></div>
+            
+            <div className="relative backdrop-blur-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/20 rounded-3xl p-8 shadow-2xl hover:shadow-gold/20 transition-all duration-500 hover:scale-105 group">
+              {/* Premium badge */}
+              <div className="absolute -top-3 left-6 bg-gradient-to-r from-gold to-gold-light px-4 py-1 rounded-full shadow-lg">
+                <span className="text-xs font-bold text-primary-dark">PREMIUM</span>
+              </div>
+              
+              <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-crystal-light to-crystal shadow-inner">
                 <img
                   src={heroMandap}
                   alt="Royal Wedding Mandap with Golden Wings"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-              </div>
-              <div className="mt-6 text-center">
-                <h3 className="font-playfair text-2xl font-bold text-gradient-luxury mb-2">
-                  Royal Wedding Mandap
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Luxury golden wings design with LED lighting
-                </p>
-                <div className="flex items-center justify-center space-x-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-gold text-gold" />
-                  ))}
-                  <span className="ml-2 text-sm text-muted-foreground">(127 reviews)</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                
+                {/* Floating price tag */}
+                <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-md text-white px-3 py-1 rounded-full text-sm font-bold">
+                  ₹2.85L
                 </div>
-                <Button variant="luxury" className="w-full">
-                  View Details
-                </Button>
               </div>
+              
+              <div className="mt-6 text-center space-y-4">
+                <div>
+                  <h3 className="font-playfair text-2xl font-bold bg-gradient-to-r from-gold via-gold-light to-gold bg-clip-text text-transparent mb-2">
+                    Royal Wedding Mandap
+                  </h3>
+                  <p className="text-primary-foreground/80 text-sm">
+                    Luxury golden wings design with LED lighting
+                  </p>
+                </div>
+                
+                <div className="flex items-center justify-center space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-gold text-gold drop-shadow-sm" />
+                  ))}
+                  <span className="ml-2 text-xs text-primary-foreground/60">(127 reviews)</span>
+                </div>
+                
+                <div className="flex space-x-2">
+                  <Button variant="gold" className="flex-1 rounded-xl shadow-lg hover:shadow-gold/30">
+                    View Details
+                  </Button>
+                  <Button variant="crystal" size="icon" className="rounded-xl shadow-lg">
+                    <Heart className="w-4 h-4" />
+                  </Button>
+                </div>
+              </div>
+              
+              {/* Subtle glow effect */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-gold/5 to-crystal/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
             </div>
           </div>
         </div>
